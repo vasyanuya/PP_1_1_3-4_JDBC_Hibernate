@@ -22,6 +22,7 @@ public class UserServiceImpl implements UserService {
     public void saveUser(String name, String lastName, byte age) throws SQLException {
         ud.saveUser(name, lastName, age);
         System.out.printf("User с именем — %s добавлен в базу данных", name);
+        System.out.println();
     }
 
     public void removeUserById(long id) throws SQLException {
